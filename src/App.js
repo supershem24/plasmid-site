@@ -1,4 +1,4 @@
-import plasmid from './plasmid.png';
+import plasmid from './Plasmid.png';
 import './App.css';
 import { createClient } from "@supabase/supabase-js";
 
