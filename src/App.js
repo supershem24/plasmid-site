@@ -18,10 +18,6 @@ function Header() {
     );
 }
 
-function Supa() {
-    supabase.rpc('hello_world');
-}
-
 function TitleArea() {
     return (
         <>
@@ -50,6 +46,7 @@ function RowOne(){
 }
 
 function RowTwo() {
+    supabase.rpc('hello_world');
     return (
         <>
             <section className="flex flex-row">
