@@ -19,7 +19,7 @@ function Header() {
 }
 
 function Supa() {
-    await supabase;
+    supabase.rpc('hello_world');
 }
 
 function TitleArea() {
@@ -39,7 +39,7 @@ function RowOne(){
         <>
             <section className="flex flex-row-reverse">
                 <section className="mx-8">
-                    <img src="https://dummyjson.com/image/800x400?type=webp" alt="something"</img>
+                    <img src="https://dummyjson.com/image/800x400?type=webp" alt="something"></img>
                 </section>
                 <p className="mx-8 text-lg">Creativity is an improtant part of what we do here, and we hope that you'll be creative with us!</p>
             </section>
