@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = 'https://rnpepenafurcryecsbog.supabase.co'
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJucGVwZW5hZnVyY3J5ZWNzYm9nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM3Mjg3MTAsImV4cCI6MjAyOTMwNDcxMH0.MOSNYlFH9Qm5 - 2g1ca-ZKEn8KezmzOpBmV_zBBmDXmE";
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 
 function Header() {
@@ -16,6 +16,10 @@ function Header() {
             <p className="text-lg">Submit your new Ideas!</p>
         </section>
     );
+}
+
+function Supa() {
+    await supabase;
 }
 
 function TitleArea() {
@@ -35,7 +39,7 @@ function RowOne(){
         <>
             <section className="flex flex-row-reverse">
                 <section className="mx-8">
-                    <img src="https://dummyjson.com/image/800x400?type=webp"></img>
+                    <img src="https://dummyjson.com/image/800x400?type=webp" alt="something"</img>
                 </section>
                 <p className="mx-8 text-lg">Creativity is an improtant part of what we do here, and we hope that you'll be creative with us!</p>
             </section>
@@ -50,7 +54,7 @@ function RowTwo() {
         <>
             <section className="flex flex-row">
                 <section className="mx-8">
-                    <img src="https://dummyjson.com/image/800x400?type=webp"></img>
+                    <img src="https://dummyjson.com/image/800x400?type=webp" alt="something"></img>
                 </section>
                 <p className="mx-8 text-lg">We hope you look forward to the creative Idea of the week, which will be showing up right here, and if you submit a form, it could be you!</p>
             </section>
@@ -65,7 +69,7 @@ function RowThree() {
         <>
             <section className="flex flex-col mx-auto justify-center items-center">
                 <section className="mx-8">
-                    <img src="https://dummyjson.com/image/800x400?type=webp"></img>
+                    <img src="https://dummyjson.com/image/800x400?type=webp" alt="something"></img>
                 </section>
                 <p className="mx-8 text-lg">Make sure to share your expierence with us by going to our submit your ideas page!</p>
             </section>
